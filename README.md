@@ -1,15 +1,15 @@
 # ShellCheck pre-commit hook
 
 This is the official [pre-commit hook](https://pre-commit.com/) for
-[ShellCheck](https://github.com/koalaman/shellcheck),
+[ShellCheck](https://github.com/cavcrosby/shellcheck),
 the static analysis tool for shell scripts.
 
 Activate by adding it to your `.pre-commit-config.yaml`:
 
 ```sh
 repos:
--   repo: https://github.com/koalaman/shellcheck-precommit
-    rev: v0.11.0
+-   repo: https://github.com/cavcrosby/shellcheck-precommit
+    rev: v0.12.0
     hooks:
     -   id: shellcheck
 #       args: ["--severity=warning"]  # Optionally only show errors and warnings
