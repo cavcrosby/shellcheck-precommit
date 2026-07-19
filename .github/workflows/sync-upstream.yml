@@ -18,7 +18,7 @@ jobs:
       - name: Sync the upstream's repository contents
         run: |
           git remote add --fetch "upstream" "https://github.com/koalaman/shellcheck-precommit.git"
-          git config "user.name" "github-actions[bot]"
-          git config "user.email" "41898282+github-actions[bot]@users.noreply.github.com"
+          git config set "user.name" "github-actions[bot]"
+          git config set "user.email" "41898282+github-actions[bot]@users.noreply.github.com"
           git merge "upstream/master"
           git push "origin" "master"
