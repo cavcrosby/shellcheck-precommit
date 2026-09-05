@@ -9,7 +9,7 @@ Activate by adding it to your `.pre-commit-config.yaml`:
 ```sh
 repos:
 -   repo: https://github.com/cavcrosby/shellcheck-precommit
-    rev: v0.12.0
+    rev: v0.13.0
     hooks:
     -   id: shellcheck
 #       args: ["--severity=warning"]  # Optionally only show errors and warnings
